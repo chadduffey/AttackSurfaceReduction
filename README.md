@@ -1,4 +1,4 @@
-# AttackSurfaceReduction
+# Windows Attack Surface Reduction rules
 Quickly configure ASR rules on non domain joined machines
 
 For each protection, just choose whether you'd like:
