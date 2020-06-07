@@ -1,5 +1,5 @@
 # Windows Attack Surface Reduction rules
-Quickly configure ASR rules on non domain joined machines
+Quickly configure ASR rules on non domain joined machines with configure.ps1
 
 For each protection, just choose whether you'd like:
 - Audit mode (uncomment the first line)
@@ -28,3 +28,4 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids 01443614-cd74-433a-b99e-2ecdc0
 ```
 Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Disabled
 ```
+delete.ps1 is there to make this faster if needed.
