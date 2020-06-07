@@ -8,7 +8,7 @@ For each protection offered by ASR, just choose whether you'd like:
 
 ## Example
 
-I want to enforce this one:
+I want to enforce "Block Adobe Reader from creating child processes":
 
 ```
 #Block Adobe Reader from creating child processes
@@ -16,16 +16,17 @@ I want to enforce this one:
 Set-MpPreference -AttackSurfaceReductionRules_Ids 7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c -AttackSurfaceReductionRules_Actions Enabled
 ```
 
-I want to audit this one:
+But i just want to audit "Block executable files from running unless they meet a prevalence, age, or trusted list criterion":
 
 ```
 #Block executable files from running unless they meet a prevalence, age, or trusted list criterion
 Add-MpPreference -AttackSurfaceReductionRules_Ids 01443614-cd74-433a-b99e-2ecdc07bfc25 -AttackSurfaceReductionRules_Actions AuditMode
 #Set-MpPreference -AttackSurfaceReductionRules_Ids 01443614-cd74-433a-b99e-2ecdc07bfc25 -AttackSurfaceReductionRules_Actions Enabled
 ```
-## Remove Rules
+
+## To Remove Rules
 
 ```
 Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Disabled
 ```
-`delete.ps1` is there to make this faster if needed.
+Or `delete.ps1` is there to make this faster if needed; just comment out what you'd like to leave alone.
