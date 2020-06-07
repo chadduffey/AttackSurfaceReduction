@@ -1,7 +1,7 @@
 # Windows Attack Surface Reduction rules
-Quickly configure ASR rules on non domain joined machines with `configure.ps1`
+You can read more about ASR [here](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction). This script will help to quickly configure ASR rules on non domain joined machines. Just use `configure.ps1`
 
-For each protection, just choose whether you'd like:
+For each protection offered by ASR, just choose whether you'd like:
 - Audit mode (uncomment the first line)
 - Enforced mode (uncomment the second line)
 - Nothing (leave it alone)
